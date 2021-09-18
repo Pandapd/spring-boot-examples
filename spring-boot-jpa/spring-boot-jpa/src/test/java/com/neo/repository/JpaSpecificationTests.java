@@ -14,8 +14,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
 @ActiveProfiles("bmodev")
+@RunWith(SpringRunner.class)
 @SpringBootTest
 public class JpaSpecificationTests {
 
