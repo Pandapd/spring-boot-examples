@@ -3,7 +3,7 @@ package com.neo.repository;
 import com.neo.model.UserDetail;
 import com.neo.param.UserDetailParam;
 import com.neo.service.UserDetailService;
-import com.neo.service.UserDetailServiceImpl;
+import javax.annotation.Resource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,11 +11,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
-
 @RunWith(SpringRunner.class)
+@ActiveProfiles("bmodev")
 @SpringBootTest
 public class JpaSpecificationTests {
 
