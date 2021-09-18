@@ -1,13 +1,11 @@
 package com.neo.web;
 
 import com.neo.model.User;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Controller
 public class ExampleController {
@@ -20,7 +18,7 @@ public class ExampleController {
 
     @RequestMapping("/if")
     public String ifunless(ModelMap map) {
-        map.addAttribute("flag", "yes");
+        map.addAttribute("flag", "no");
         return "if";
     }
 
